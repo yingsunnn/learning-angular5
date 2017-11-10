@@ -1,16 +1,25 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Entry } from '../entry.model';
 
 @Component({
   selector: 'app-entry-card',
   template: `
     <p>
-      entry-card works!
+      Entry Name: {{entry.name}}
+    </p>
+    <p>
+      Definition: {{entry.definition}}
+    </p>
+    <p>
+      Example: {{entry.example}}
     </p>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None
 })
 export class EntryCardComponent implements OnInit {
+
+  @Input() entry: Entry;
 
   constructor() { }
 
