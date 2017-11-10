@@ -7,7 +7,6 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'entry-card', component: EntryCardComponent },
       { path: 'entry-list', component: EntryListComponent }
     ]
   }

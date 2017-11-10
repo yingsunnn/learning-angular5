@@ -4,15 +4,12 @@ import { Entry } from '../entry.model';
 @Component({
   selector: 'app-entry-card',
   template: `
-    <p>
-      Entry Name: {{entry.name}}
-    </p>
-    <p>
-      Definition: {{entry.definition}}
-    </p>
-    <p>
-      Example: {{entry.example}}
-    </p>
+    <p-fieldset legend="{{entry.name}}">
+      <span class="ui-text"> Definition: {{entry.definition}} </span>
+      <br/>
+      <span> Example: {{entry.example}} </span>
+    </p-fieldset>
+    <br>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None

@@ -5,14 +5,13 @@ import { EntryCardComponent } from '../entry-card/entry-card.component';
 @Component({
   selector: 'app-entry-list',
   template: `
-    <p> 
-      entry-list works!
-    </p>
-    <ul>
-      <li *ngFor="let entry of entries; let i = index">
-        <app-entry-card [entry] = "entry"></app-entry-card>
-      </li>
-    </ul>
+    <div class="content-section implementation">
+      <ul>
+        <li class="ui-helper-reset" *ngFor="let entry of entries; let i = index">
+          <app-entry-card [entry] = "entry"></app-entry-card>
+        </li>
+      </ul>
+    </div>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None
