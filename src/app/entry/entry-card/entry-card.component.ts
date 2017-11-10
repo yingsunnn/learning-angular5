@@ -1,17 +1,16 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-entry-card',
   template: `
     <p>
-      footer works!
+      entry-card works!
     </p>
-    <button pButton type="button" label="This is a button"></button>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None
 })
-export class FooterComponent implements OnInit {
+export class EntryCardComponent implements OnInit {
 
   constructor() { }
 
